@@ -1,17 +1,15 @@
 import React from 'react'
 
-
-const ProjectSummary = () => {
-  return(
+const ProjectSummary = ({project}) => {
+  return (
     <div className="card z-depth-0 project-summary">
-        <div className="card-content grey-text text-darken-3">
-          <span className="card-title">Project 1</span>
-          <p>Posted by Rick</p>
-          <p className="grey-text">23 July 19:53</p>
-        </div>
+      <div className="card-content grey-text text-darken-3">
+        <span className="card-title ">{project.title}</span>
+        <p>Posted by The Net Ninja</p>
+        <p className="grey-text">3rd September, 2am</p>
       </div>
+    </div>
   )
 }
-
 
 export default ProjectSummary
